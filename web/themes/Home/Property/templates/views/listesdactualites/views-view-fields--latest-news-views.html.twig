@@ -1,0 +1,13 @@
+
+<figure class="aa-blog-img">
+{{ fields.field_imagenews.content }} 
+<span class="aa-date-tag">{{ fields.created.content }}</span>
+</figure>
+ <div class="aa-blog-single-content">
+         <h3>{{ fields.field_sujet_news.content }}</h3>
+         <p>{{ fields.body.content }}</p>
+         <div class="aa-blog-single-bottom">
+          <div class="aa-blog-author"><i class="fa fa-user"></i> {{ fields.uid.content }}</div>
+          <div class="aa-blog-comments"><i class="fa fa-comment-o"></i>{{ fields.comment_count.content }}</div>
+        </div>
+</div>

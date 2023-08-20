@@ -1,0 +1,26 @@
+ <div class="aa-latest-property-area">
+             
+          
+     {{ title }}
+     
+       <div class="aa-title">
+    <span></span>
+  </div>  
+  {% if header %}
+    <header>
+    <div class="aa-title">
+      {{ header }}
+    </div>  
+    </header>
+    
+  {% endif %}
+  <div class="aa-latest-properties-content">
+          <div class="row">
+           
+        {% if rows -%}
+          {{ rows }}
+        {% elseif empty -%}
+          {{ empty }}
+        {% endif %}
+     
+    </div></div></div>

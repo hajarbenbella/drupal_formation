@@ -1,0 +1,14 @@
+  <section id="aa-slider">
+    <div class="aa-slider-area">
+      <!-- Top slider -->
+      <div class="aa-top-slider">
+        {{ title }}
+        {{ header }}
+        {% if rows -%}
+          {{ rows }}
+        {% elseif empty -%}
+          {{ empty }}
+        {% endif %}
+      </div>
+    </div>
+  </section>

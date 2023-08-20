@@ -1,0 +1,22 @@
+global-styling:
+  version: VERSION
+  css:
+    base:
+      assets/css/font-awesome.css: { }
+      assets/css/bootstrap.css: { }
+      assets/css/slick.css: { }
+      assets/css/nouislider.css: { }
+      assets/css/jquery.fancybox.css: { }
+      assets/css/theme-color/default-theme.css: {}
+      assets/css/style.css: { }
+  js:
+    assets/js/jquery.min.js: { }
+    assets/js/bootstrap.js: { }
+    assets/js/slick.js: { }
+    assets/js/nouislider.js: { }
+    assets/js/jquery.mixitup.js: { }
+    assets/js/jquery.fancybox.pack.js: { }
+    assets/js/custom.js: { }
+
+
+
