@@ -1415,8 +1415,8 @@ a.bg-danger:focus {
 }
 ul,
 ol {
-  float: right !important;
-    margin-right: -15px;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 ul ul,
 ol ul,

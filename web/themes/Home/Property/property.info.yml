@@ -12,7 +12,9 @@ regions:
   header: Header
   hp_content: Hp_content
   content: Content
-  footer_first: 'Footer_first'
   footer_third: 'Footer_third'
   footer_second: 'Footer_second'
+  footer_first: 'Footer_first'
+  
+ 
   

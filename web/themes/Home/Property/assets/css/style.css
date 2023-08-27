@@ -39,7 +39,7 @@
 body {
   background-color: #ffffff;
   font-family: "Open Sans", sans-serif;
-  color: #59abe3;
+  color: #333333;
   font-size: 15px;
   overflow-x: hidden;
 }
@@ -57,7 +57,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: #eeeeee;
+  color: #333333;
 }
 
 a:hover,
@@ -151,22 +151,19 @@ img {
   width: 100%;
 }
 #aa-header .aa-header-area .aa-header-left {
-  display: flex;
-  gap:10px;
+  display: inline;
   float: left;
   width: 100%;
 }
+
 #aa-header .aa-header-area .aa-header-left .aa-telephone-no {
   color: #fff;
   float: left;
   font-size: 15px;
-
 }
-
 #aa-header .aa-header-area .aa-header-left .aa-telephone-no div {
   display: flex !important;
   gap:6px;
-
 }
 #aa-header .aa-header-area .aa-header-left .aa-telephone-no span {
   margin-right: 5px;
@@ -318,7 +315,7 @@ img {
 /*Preloader*/
 #aa-preloader-area {
   background-color: #F8F8F8;
-  position: fixed;
+  position: fixed; 
   left: 0;
   right: 0;
   top: 0;
@@ -2631,18 +2628,29 @@ img {
   float: left;
   width: 100%;
 }
-#aa-footer .aa-footer-area .aa-footer-left {
+/* #aa-footer .aa-footer-area .aa-footer-left {
   display: inline;
   float: left;
   width: 100%;
+} */
+#aa-footer .aa-footer-area .aa-footer-left {
+  display: flex;
+  float: left;
+  width: 100%;
+  align-items: center;
+  gap: 5px;
 }
-#aa-footer .aa-footer-area .aa-footer-left p {
+
+#aa-footer .aa-footer-area .aa-footer-left  p {
   color: #fff;
   margin-bottom: 0;
-  padding-top: 5px;
+  
 }
-#aa-footer .aa-footer-area .aa-footer-left p a {
+#aa-footer .aa-footer-area .aa-footer-left  a {
   color: #fff;
+}
+#aa-footer .aa-footer-area .aa-footer-left  a:hover {
+  color: #337ab7 !important;
 }
 #aa-footer .aa-footer-area .aa-footer-middle {
   display: inline;
@@ -2736,7 +2744,7 @@ img {
   }
 
   .pulse {
-    left: 46%;
+    left: 46%;  
   }
 
 }
@@ -2826,7 +2834,7 @@ img {
   }
 
   .pulse {
-    left: 44%;
+    left: 44%;  
   }
 
 }
@@ -3205,7 +3213,7 @@ img {
   }
 
   .pulse {
-    left: 43%;
+    left: 43%;  
   }
 
 }
@@ -3405,7 +3413,7 @@ img {
   }
 
   .pulse {
-    left: 39%;
+    left: 39%;  
   }
 }
 @media (max-width: 320px) {
@@ -3428,8 +3436,8 @@ img {
   #aa-slider .aa-slider-area .aa-top-slider .aa-top-slider-single .aa-top-slider-content {
     left: 17%;
   }
-
-  #aa-header .aa-header-area .aa-header-left .aa-telephone-no {
+ 
+  #aa-header .aa-header-area .aa-header-left .aa-telephone-no {  
     font-size: 13px;
     margin-top: 3px;
   }
@@ -3452,7 +3460,7 @@ img {
   }
 
   .pulse {
-    left: 38%;
+    left: 38%;  
   }
-
+  
 }
