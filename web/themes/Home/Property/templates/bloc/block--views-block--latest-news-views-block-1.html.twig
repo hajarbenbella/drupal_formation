@@ -1,20 +1,21 @@
 
 <div{{ attributes.addClass(classes) }}>
   {{ title_prefix }}
-      <section id="aa-latest-blog">
+  <section id="aa-latest-blog">
     <div class="container">
       <div class="row">
-  {% if label %}
-   <div class="aa-title">
-    <h2{{ title_attributes }}>{{ label }}</h2>
-    </div>
-  {% endif %}
-  {{ title_suffix }}
-  {% block content %}
-    <div{{ content_attributes.addClass('content') }}>
-      {{ content }}
-    </div>
-  {% endblock %}
-</div>
-</div></div>
-</section>
+        {% if label %}
+         <div class="aa-title">
+            <h2{{ title_attributes }}>{{ label }}</h2>
+         </div>
+        {% endif %}
+        {{ title_suffix }}
+        {% block content %}
+             <div{{ content_attributes.addClass('content') }}>
+                {{ content }}
+              </div>
+         {% endblock %}
+      </div>
+   </div>
+ </section>
+ </div>

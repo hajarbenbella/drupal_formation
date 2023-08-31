@@ -1,26 +1,25 @@
 
    
-        <div class="col-md-12">
-          <div class="aa-latest-blog-area">
-            <div class="aa-title">
-             <h2>{{ title }}</h2>
-              <span></span>
-                {% if header %}
-                  <p>{{ header }}</p>
-                {% endif %}
-            </div>
-             <div class="aa-latest-blog-content">
-              <div class="row">
-               {% if rows -%}
-          {{ rows }}
-        {% elseif empty -%}
-          {{ empty }}
-        {% endif %}
-             
- </div>
-
-
-</div>
-          </div>
+ <div class="col-md-12">
+     <div class="aa-latest-blog-area">
+        <div class="aa-title">
+          <h2>{{ title }}</h2>
+          <span></span>
+          {% if header %}
+             <p>{{ header }}</p>
+          {% endif %}
         </div>
+        <div class="aa-latest-blog-content">
+          <div class="row">
+             {% if rows -%}
+               {{ rows }}
+             {% elseif empty -%}
+               {{ empty }}
+             {% endif %}
+             
+          </div>
+
+
       </div>
+          
+  </div>

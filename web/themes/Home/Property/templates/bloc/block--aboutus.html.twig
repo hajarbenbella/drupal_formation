@@ -1,23 +1,28 @@
 
 <div{{ attributes }}>
-  {{ title_prefix }}
- <section id="aa-about-us">
+   {{ title_prefix }}
+  <section id="aa-about-us">
 
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <div class="aa-about-us-area">
             <div class="row">
-  {% if label %}
+              {% if label %}
   
   
-    <h2{{ title_attributes }}>{{ label }}</h2>
+                <h2{{ title_attributes }}>{{ label }}</h2>
     
-  {% endif %}
-  {{ title_suffix }}
-  {% block content %}
-    {{ content }}
-  {% endblock %}
-  </div> </div> </div> </div> </div>
-</section>
+              {% endif %}
+              {{ title_suffix }}
+              {% block content %}
+                 {{ content }}
+              {% endblock %}
+           </div>
+         </div> 
+        </div> 
+      </div> 
+    </div>
+  </section>
+ </div>
 

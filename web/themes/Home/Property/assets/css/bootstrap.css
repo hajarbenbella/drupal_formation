@@ -1115,7 +1115,14 @@ figure {
 }
 img {
   vertical-align: middle;
+
 }
+.aa-about-us-area img {
+
+    height: 432px;
+    width: 334px;
+}
+
 .img-responsive,
 .thumbnail > img,
 .thumbnail a > img,

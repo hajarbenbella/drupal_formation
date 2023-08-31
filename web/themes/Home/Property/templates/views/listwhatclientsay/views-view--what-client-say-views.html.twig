@@ -1,27 +1,22 @@
-
-        <div class="col-md-12">
-           <div class="aa-client-testimonial-area">
-            <div class="aa-title">
-              <h2>{{ title }}</h2>
-              <span></span>
-                {% if header %}
-                  <p>{{ header }}</p>
-                {% endif %}
-            </div>
-            <div class="aa-testimonial-content">
+ <div class="col-md-12">
+    <div class="aa-client-testimonial-area">
+       <div class="aa-title">
+           <h2>{{ title }}</h2>
+           <span></span>
+            {% if header %}
+                <p>{{ header }}</p>
+             {% endif %}
+       </div>
+       <div class="aa-testimonial-content">
             
-              <ul class="aa-testimonial-slider">
-                {% if rows -%}
-          {{ rows }}
-        {% elseif empty -%}
-          {{ empty }}
-        {% endif %}
-              </ul>
-            </div>
-
-
-
-          </div>
-        </div>
-      </div>
+          <ul class="aa-testimonial-slider">
+            {% if rows -%}
+                {{ rows }}
+            {% elseif empty -%}
+                {{ empty }}
+            {% endif %}
+          </ul>
+       </div>
+       </div>
+  </div>
    

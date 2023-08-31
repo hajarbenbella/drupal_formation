@@ -1,9 +1,30 @@
   <div class="aa-properties-item-img">
                   {{ fields.field_image_proprietes_.content }} 
                 </div>
-                 <div class="aa-tag for-sale">
-                {{ fields.field_type_de_vente.content }} 
-                </div>
+
+
+             
+{% if 'For Sale' == fields.field_type_de_vente.content|render|striptags|trim  %}
+
+    <div class="aa-tag for-sale">
+        For Sale
+    </div>
+
+{% elseif 'For Rent' == fields.field_type_de_vente.content|render|striptags|trim  %}
+
+    <div class="aa-tag for-rent">
+         For Rent
+    </div>
+
+{% elseif 'Sold Out' == fields.field_type_de_vente.content|render|striptags|trim  %}
+    <div class="aa-tag sold-out">
+        Sold Out
+    </div>
+    
+{% endif %}
+
+
+                
                 <div class="aa-properties-item-content">
                   <div class="aa-properties-info">
                     <span>{{ fields.field_pieces_de_maison.content }} </span>

@@ -1,0 +1,27 @@
+ <section id="aa-gallery">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-gallery-area">
+            <div class="aa-title">
+             {{ title }}
+              <span></span>
+                {% if header %}
+                  <p>{{ header }}</p>
+                {% endif %}
+            </div>
+           
+ {% if rows -%}
+          {{ rows }}
+        {% elseif empty -%}
+          {{ empty }}
+        {% endif %}</div></div></div></div></div>
+              </section>
+
+
+
+
+
+
+
+    

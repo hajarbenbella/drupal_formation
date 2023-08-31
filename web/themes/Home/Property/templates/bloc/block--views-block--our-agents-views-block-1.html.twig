@@ -5,18 +5,19 @@
   <section id="aa-agents">
     <div class="container">
       <div class="row">
-  {% if label %}
+        {% if label %}
     
-   <div class="aa-title">
-    <h2{{ title_attributes }}>{{ label }}</h2>
-   </div>
-  {% endif %}
-  {{ title_suffix }}
+          <div class="aa-title">
+            <h2{{ title_attributes }}>{{ label }}</h2>
+          </div>
+        {% endif %}
+        {{ title_suffix }}
   
-  {% block content %}
-    {{ content }}
+        {% block content %}
+          {{ content }}
  
-  {% endblock %}
+        {% endblock %}
+      </div>
+    </div>
+  </section>
 </div>
-</div>
-</div></section>

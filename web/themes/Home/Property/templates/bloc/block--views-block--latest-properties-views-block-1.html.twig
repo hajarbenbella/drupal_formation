@@ -2,21 +2,24 @@
 
 <div{{ attributes }}>
   {{ title_prefix }}
-   <section id="aa-latest-property">
-          <div class="container">
-             <div class="row">
-  {% if label %}
-   <div class="aa-latest-property-area">
-  <div class="aa-title">
-    <h2{{ title_attributes }}>{{ label }}</h2>
-   </div></div>
-  {% endif %}
-  {{ title_suffix }}
+  <section id="aa-latest-property">
+    <div class="container">
+      <div class="row">
+        {% if label %}
+          <div class="aa-latest-property-area">
+           <div class="aa-title">
+             <h2{{ title_attributes }}>{{ label }}</h2>
+           </div>
+          </div>
+        {% endif %}
+          {{ title_suffix }}
   
-  {% block content %}
-    {{ content }}
+          {% block content %}
+              {{ content }}
  
-  {% endblock %}
-</div>
-</div>
-</div></section>
+          {% endblock %}
+      </div>
+   </div>
+   
+  </section>
+</div>  
